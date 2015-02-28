@@ -24,5 +24,32 @@ function myFunction() {
     document.getElementById("fourth").innerHTML = t;
 }
 
+document.getElementById("anyTime").addEventListener("click", function(){
+    alert("You don't say!");
+});
+
+//mouseover and click listener
+var x = document.getElementById("gotTime");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("click", mySecondFunction);
+x.addEventListener("mouseout", myThirdFunction);
+
+function myFunction() {
+    document.getElementById("demo").innerHTML += "Wanna wanna!<br>";
+}
+
+function mySecondFunction() {
+    document.getElementById("demo").innerHTML += "Hmm Mmm!<br>";
+}
+
+function myThirdFunction() {
+    document.getElementById("demo").innerHTML += "Don't you wanna?<br>";
+}
+
+//resize browser
+window.addEventListener("resize", function(){
+    document.getElementById("size").innerHTML = Math.random();
+});
+
 
 
