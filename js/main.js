@@ -28,7 +28,7 @@ document.getElementById("anyTime").addEventListener("click", function(){
     alert("You don't say!");
 });
 
-//mouseover and click listener
+//mouseover and click listener: displays message when mouse over and another when clicked 
 var x = document.getElementById("gotTime");
 x.addEventListener("mouseover", myFunction);
 x.addEventListener("click", mySecondFunction);
@@ -46,7 +46,7 @@ function myThirdFunction() {
     document.getElementById("demo").innerHTML += "Don't you wanna?<br>";
 }
 
-//resize browser
+//displays "resize numbers" when you resize the browser
 window.addEventListener("resize", function(){
     document.getElementById("size").innerHTML = Math.random();
 });
