@@ -9,34 +9,20 @@ theHeading.addEventListener( "click", function() {
 	theContainer.appendChild( newPara );
 });
 
-/*var theHeading = document.getElementById( 'theHeading' );
 
-theHeading.addEventListener('click', 
+function myFunction() {
+    var q = document.getElementById("submit1").value;
+    document.getElementById("first").innerHTML = q;
 
-	function() {
-	var newPara = document.createElement('p');
-	newPara.innerHTML = "This is click number" + theHeading;
+    var r = document.getElementById("submit2").value;
+    document.getElementById("second").innerHTML = r;
 
-	var theHeading = document.getElementById('theHeading');
-  if (theHeading.firstChild.nodeValue == 'three') {
-    theHeading.firstChild.nodeValue = 'two';
-  } else {
-    theHeading.firstChild.nodeValue = 'three';
-  }
+    var s = document.getElementById("submit3").value;
+    document.getElementById("third").innerHTML = s;
 
-	var theContainer = document.getElementById('container');
-	theContainer.appendChild(newPara);
-});
-
-/*function clickety() {
-	if (h1.firstChild.nodeValue == "three") {
-		h1.firstChild.nodeValue = "two";}
-		else {
-			h1.firstChild.nodeValue = "three";
+    var t = document.getElementById("submit4").value;
+    document.getElementById("fourth").innerHTML = t;
 }
 
-/*theHeading.addEventListener('click', function() {
-	console.log('This is the number' + x);
-}*/
 
 
